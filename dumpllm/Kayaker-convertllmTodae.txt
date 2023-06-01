@@ -1,0 +1,21 @@
+      if (strcmp(s,morph)==0)
+            printf("    %s has %i targets\n",s,numMorphs);
+        int vindex=0;
+        for (loop=0;loop<numMorphs;loop++)
+        {
+            fread(&vindex,4,1,file);                     //each vertex has an index
+            fread(f,4,11,file);                  //followed by 11 floats, a vector(3), normal(3), binomral(3) and UV(2)
+            if (strcmp(s,morph)==0)     //if this is the one we want to apply
+            {
+                        //hypotesis 1: each vector in the morph is ADDED to the target vertex
+                addVec(f,verts+vindex*3,3);
+                addVec(f+3,norms+vindex*3,3);
+                addVec(f+9,texts+vindex*3,2);
+//                printf("      %4i:<%9.6f,%9.6f,%9.6f> <%9.6f,%9.6f,%9.6f> <%9.6f,%9.6f,%9.6f> (%9.6f,%9.6f)\n",
+//                          vindex,f[0],f[1],f[2],f[3],f[4],f[5],f[6],f[7],f[8],f[9],f[10]);
+            }
+        }
+
+PS: The hypothesis was verified! I never had to try any others!
+
+
