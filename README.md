@@ -1,4 +1,4 @@
-# Viewer-Character
+# OpenSim-Avatar
 Research Results for the current default SL/OS viewer avatar.
 
 These repositories are owned and managed by New Media Arts, Inc., a nonprofit corporation tax exempt under IRC (501(c)(3), EIN 27-1500171, to preserve our cultural heritages in new media platforms, and to develop and preserve new media education and libraries and the arts.  Our projects include Antique Pattern Library, Community Virtual Library, the Arcadia/Aley virtual world artist library on the Kitely grid in OpenSimulator virtual worlds, A New Viewer Avatar, Perpetual Hash, and several partnerships with virtual world organizations. 
