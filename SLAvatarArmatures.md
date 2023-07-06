@@ -4,9 +4,9 @@ Approximate history:
 c.2002  the basemesh armature, pos value, referred to in the llm files:
 mPelvis, mTorso, mChest, mNeck, mHead, mEyeRight, mEyeLeft, mCollarLeft, mShoulderLeft, mElbowLeft, mWristLeft, mCollarRight, mWristRight, mHipRight, mKneeRight, mAnkleRight, mHipLeft, mKneeLeft, mAnkle Left. 
 
-I'm not sure when or how they added mEyeLeft and mEyeRight. They're not referred to in the llm files, which position one eye at 0,0,0. Those two bones are grouped as "Extra" along with mSkull, mFoot and mToe. 
+I'm not sure when or how they added mEyeLeft and mEyeRight. They're not referred to in the llm files, which position one eye at 0,0,0. We (Tom Ernst aka Owl Eyes and I) are assuming that the back of the eye ball mesh lines up with the head of the mEye bones. 
 
-With the arrival of mesh attachments c. 2012, additions mSkull, mFootLeft, mFootRight, mToeLeft, mToeRight, and pivot values - more decimal places. Note that Blender rounds differently than the xml data, past the 5th place. 
+With the arrival of mesh attachments c. 2012, additions mSkull, mFootLeft, mFootRight, mToeLeft, mToeRight, and pivot values - more decimal places. Note that Blender rounds differently than the xml data. 
 
 2013 official support for collision volume weighting on rigged mesh attachments. It had already been in use by several rigged clothing designers for a few months. The collision bones continue to use "pos" values.  
 
@@ -50,5 +50,5 @@ There are left-right asymmetries in the xml data, possibly deliberate. I left th
 
 I set up pose mode bone groups, based on the avatar_skeleton.xml attribute "group=". Two of the colors; basemesh mBones, and collision bones, are based on the inworld bone displays (Developer/Avatar/Show Bones). I use these bone groups to make it easier to select bone groups. It's easy to change the colors to whatever you want. A little more work to put groups of bones into the armature layers, as Avastar does. Bento Buddy uses groups to organize bones in a different way, and handles the calculations to convert xml data to Blender data differently as well.   
 
-Last updated Ada Radius 2023-06-04, Blender 3.3.6 LTS    
+Last updated Ada Radius 2023-07-06, Blender 3.6 LTS    
 
